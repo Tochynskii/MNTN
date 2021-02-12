@@ -1,0 +1,70 @@
+.footer {
+	display: flex;
+
+	&__column {
+		display: flex;
+		flex: 0 1 50%;
+	}
+	.footer__column_l {
+		justify-content: flex-end;
+	}
+}
+.company {
+	display: flex;
+	flex-direction: column;
+	&__logo {
+		padding-bottom: 24px;
+	}
+
+	&__text {
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 32px;
+		color: #fff;
+		padding-bottom: 142px;
+	}
+
+	&__policy {
+		// margin-top: auto;
+		color: #ffffff;
+		opacity: 0.5;
+	}
+}
+.blog,
+.MNTN {
+	margin: 0;
+	&__links {
+		padding: 0 0 16px 0;
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 32px;
+		list-style: none;
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+		a:hover {
+			color:  #fbd784;;
+		}
+	}
+	&__links:first-child {
+		padding: 0 0 24px 0;
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 32px;
+		color: #fbd784;
+	}
+	&__links:last-child {
+		padding: 0 0 0px 0;
+	}
+}
+
+.MNTN {
+	padding: 0 0 0 212px;
+}

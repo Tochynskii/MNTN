@@ -1,0 +1,585 @@
+// ШРИФТИ>===============================================================================================
+
+// ШРИФТИ>===============================================================================================
+
+// перемінні>===============================================================================================
+$minwidth: 320px;
+// перемінні>===============================================================================================
+
+// Загальні параметри>===============================================================================================
+
+// Загальні параметри>===============================================================================================
+
+// Оболочка>===============================================================================================
+html {
+	scroll-behavior: smooth;
+}
+body {
+	height: 100%;
+	background-color: rgb(11, 29, 38);
+	margin: 0 auto;
+}
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	max-width: 1920px;
+	margin-right: auto;
+	margin-left: auto;
+}
+// Оболочка>===============================================================================================
+
+// основна сітка>===============================================================================================
+.start-section {
+	position: relative;
+	width: 100%;
+	max-width: 1920px;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.gradient-page {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	max-width: 1920px;
+}
+.gradient-page img {
+	position: absolute;
+	display: inline-block;
+	object-fit: cover;
+	width: 100%;
+}
+.gradient-page::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0b1d26 108.93%);
+	z-index: 5;
+}
+
+.content-section {
+	position: relative;
+	z-index: 50;
+	padding-top: 240px;
+	max-width: 1920px;
+}
+
+.page {
+	position: fixed;
+	width: 100%;
+	max-width: 1920px;
+	top: 25%;
+	z-index: 6;
+	transform-style: preserve-3d;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 80px;
+	}
+}
+
+.container {
+	max-width: 1460px;
+	margin: 0 auto;
+	padding: 0 80px 120px 80px;
+
+	// @media (max-width:1620px) {
+	// 	padding: 20px;
+	// }
+}
+
+// основна сітка>===============================================================================================
+
+// Підключення файлів стилів сторінок та елементів>===============================================================
+@import "_header.scss";
+@import "_footer.scss";
+@import "_ui.scss";
+// Підключення файлів стилів сторінок та елементів>================================================================
+
+// Основний блок>===============================================================================================
+
+.hg {
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	right: 0%;
+	bottom: 0%;
+	transform-style: preserve-3d;
+}
+.mg {
+	position: absolute;
+	left: 0%;
+	top: 40%;
+	right: 0%;
+	bottom: 0%;
+	z-index: 0;
+	transform-style: preserve-3d;
+}
+.vg {
+	position: absolute;
+	left: 0%;
+	top: 65%;
+	right: 0%;
+	bottom: 0%;
+	z-index: 21;
+	transform-style: preserve-3d;
+}
+
+.social-links {
+	display: flex;
+	align-items: center;
+	transform: rotate(90deg);
+	position: relative;
+	right: 4.5%;
+	&__text {
+		color: #fff;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 22px;
+	}
+	&__icon {
+		display: flex;
+		&_f {
+			display: flex;
+			margin: 0 24px 0 24px;
+		}
+	}
+}
+.content {
+	display: flex;
+	width: 100%;
+	max-width: 950px;
+	position: relative;
+	flex-direction: column;
+	align-items: flex-start;
+	&__number {
+		display: flex;
+		position: absolute;
+		right: 74.3%;
+		bottom: 45.5%;
+		opacity: 0.1;
+		font-size: 240px;
+		line-height: 240px;
+		font-weight: 700;
+		color: #fff;
+	}
+	&__tagline {
+		display: flex;
+		align-items: center;
+		font-weight: 800;
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 6px;
+		text-transform: uppercase;
+		color: #fbd784;
+		h5 {
+			margin: 0;
+		}
+	}
+
+	&__title {
+		&_i {
+			font-weight: 600;
+			font-size: 64px;
+			line-height: 77px;
+			padding: 27px 0px;
+		}
+		font-family: Chronicle Display;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 88px;
+		line-height: 100px;
+		color: #ffffff;
+		text-transform: capitalize;
+		padding: 32px 0px;
+		margin: 0;
+	}
+
+	&__text {
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 32px;
+		color: #ffffff;
+		padding: 0 0 27px 0;
+	}
+
+	&__link {
+		.text_c {
+			color: #fbd784;
+		}
+		text-decoration: none;
+		color: #ffffff;
+		font-size: 18px;
+		&:hover {
+			color: #fbd784;
+			.arrow,
+			.arrow div::after,
+			.arrow div::before {
+				background-color: #fbd784;
+			}
+		}
+		.arrow {
+			position: relative;
+			top: -10px;
+			width: 22px;
+			height: 2px;
+			background-color: #fff;
+			left: 95px;
+			display: block;
+			transform: rotate(90deg);
+		}
+		.arrow div::after {
+			content: "";
+			position: absolute;
+			width: 11px;
+			height: 2px;
+			top: -4px;
+			right: -1px;
+			background-color: #fff;
+			transform: rotate(45deg);
+		}
+
+		.arrow div::before {
+			content: "";
+			position: absolute;
+			width: 11px;
+			height: 2px;
+			top: 4px;
+			right: -1px;
+			background-color: #fff;
+			transform: rotate(-45deg);
+		}
+
+		.arrowr-right {
+			position: relative;
+			top: -10px;
+			width: 22px;
+			height: 2px;
+			background-color: #fbd784;
+			left: 95px;
+			display: block;
+		}
+		.arrowr-right div::after {
+			content: "";
+			position: absolute;
+			width: 11px;
+			height: 2px;
+			top: -4px;
+			right: -1px;
+			background-color: #fbd784;
+			transform: rotate(45deg);
+		}
+		.arrowr-right div::before {
+			content: "";
+			position: absolute;
+			width: 11px;
+			height: 2px;
+			top: 4px;
+			right: -1px;
+			background-color: #fbd784;
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.tagline-line {
+	content: "";
+	position: relative;
+	width: 72px;
+	height: 2px;
+	background: #fbd784;
+	left: 0;
+	margin-right: 32px;
+}
+.nav-slider {
+	&__text {
+	}
+
+	&__line {
+	}
+}
+
+// Основний блок>===============================================================================================
+.information {
+	&_rev {
+		.information__column {
+			&_b {
+				order: 2;
+			}
+		}
+		.information__content {
+			padding: 141px 0px 140px 264px;
+		}
+	}
+	&__row {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 200px;
+	}
+
+	&__column {
+		flex: 0 1 33.333%;
+		&_b {
+			flex: 0 1 66.667%;
+		}
+	}
+
+	&__content {
+		padding: 141px 114px 140px 150px;
+	}
+
+	&__img {
+		max-width: 566px;
+		height: 720px;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+// MEDIA // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+@media (max-width: 1250px) {
+	.mg {
+		top: 30%;
+	}
+	.vg {
+		top: 50%;
+	}
+	.social-links {
+		&__text {
+			font-size: 15px;
+		}
+		&__icon {
+			&_f {
+				width: 20px;
+				height: 20px;
+				margin: 0 15px 0 15px;
+			}
+			width: 20px;
+			height: 20px;
+		}
+	}
+	.content {
+		max-width: 700px;
+		&__tagline {
+			font-size: 15px;
+		}
+		&__title {
+			font-size: 60px;
+			padding: 16px 0;
+			line-height: 75px;
+			&_i {
+				font-size: 44px;
+			}
+		}
+		&__link {
+			font-size: 14px;
+		}
+		&__text {
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 25px;
+		}
+	}
+	.information__column {
+		flex: 0 1 50%;
+	}
+	.information__content {
+		padding: 60px 60px 60px 60px;
+	}
+	.information_rev {
+		.information__content {
+			padding: 60px 60px 60px 60px;
+		}
+	}
+}
+@media (max-width: 1000px) {
+	.content-section {
+		padding-top: 120px;
+	}
+	.page__row {
+		padding: 0 40px;
+	}
+	.social-links {
+		&__text {
+			font-size: 15px;
+		}
+		&__icon {
+			&_f {
+				width: 20px;
+				height: 20px;
+				margin: 0 15px 0 15px;
+			}
+			width: 20px;
+			height: 20px;
+		}
+	}
+	.content {
+		max-width: 700px;
+		&__tagline {
+			font-size: 15px;
+		}
+		&__title {
+			font-size: 50px;
+			padding: 16px 0;
+			line-height: 60px;
+			&_i {
+				font-size: 44px;
+			}
+		}
+		&__link {
+			font-size: 14px;
+		}
+		&__text {
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 25px;
+		}
+	}
+	.information__column {
+		order: 1;
+		flex: 0 1 33.333%;
+		&_b {
+			order: 2;
+			flex: 0 1 66.667%;
+		}
+	}
+	.information__content {
+		max-width: 566px;
+		padding: 20px 10px;
+	}
+	.information {
+		&__row {
+			flex-direction: column;
+		}
+		&__img {
+			max-height: 400px;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+	.MNTN {
+		display: none;
+	}
+}
+@media (max-width: 768px) {
+	.header__row {
+		padding: 30px 40px 0 40px;
+	}
+	.content-section {
+		padding-top: 0;
+	}
+	.container {
+		padding: 0px 40px 80px;
+	}
+	.menu {
+		display: none;
+	}
+	.hg {
+		width: 100%;
+		height: 600px;
+		img {
+			object-fit: cover;
+			position: absolute;
+			}
+	}
+	.mg {
+		width: 100%;
+		height: 600px;
+		top: 35%;
+		img {
+			object-fit: cover;
+			}	
+	}
+	.vg {
+		width: 100%;
+		top: 55%;
+		img {
+			object-fit: cover;
+			}
+	}
+	.social-links {
+		&__text {
+			font-size: 15px;
+		}
+		&__icon {
+			&_f {
+				width: 20px;
+				height: 20px;
+				margin: 0 10px 0 10px;
+			}
+			width: 20px;
+			height: 20px;
+		}
+	}
+	.tagline-line {
+		width: 50px;
+		margin-right: 18px;
+	}
+	.content {
+		max-width: 700px;
+		&__tagline {
+			font-size: 12px;
+		}
+		&__title {
+			font-size: 45px;
+			padding: 16px 0;
+			line-height: 60px;
+			&_i {
+				font-size: 44px;
+			}
+		}
+		&__link {
+			font-size: 14px;
+		}
+		&__text {
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 25px;
+		}
+	}
+	.information__column {
+		flex: 0 1 50%;
+	}
+	.information__content {
+		padding: 60px 60px 60px 60px;
+	}
+	.information_rev {
+		.information__content {
+			padding: 60px 60px 60px 60px;
+		}
+	}
+	.information__row {
+		margin-bottom: 100px;
+	}
+	.footer {
+		flex-direction: column;
+		.company__text {
+			padding-bottom: 50px;
+		}
+		.footer__column_l {
+			margin-top: 50px;
+			justify-content: flex-start;
+		}
+		.blog {
+			padding: 0;
+		}
+	}
+
+}
+// MEDIA // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
