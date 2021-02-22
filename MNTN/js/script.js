@@ -12,7 +12,4 @@ window.addEventListener('scroll', function () {
 	sky.style.transform = `translate3d(0px, ${-value / 12}%, 0px)`
 	rock.style.transform = `translate3d(0px, ${-value / 23}%, 0px)`
 	hill.style.transform = `translate3d(0px, ${-value / 70}%, 0px)`
-	console.log(value)
-
 })
-
